@@ -1,0 +1,22 @@
+body{
+	background: url('../images/bg.png');
+}
+
+
+.logo{
+	width: 100px;
+}
+
+.box{
+	background: white;
+	border-radius: 20px;
+	padding: 30px;
+}
+
+.header-img{
+	width: 100%;
+}
+
+.subRow{
+	padding: 30px 0;
+}

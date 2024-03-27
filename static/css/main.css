@@ -1,0 +1,64 @@
+.header{
+	background: #036;
+}
+
+.logo{
+	width: 80px;
+	height: 80px;
+	border-radius: 100%;
+}
+
+.CollegeName{
+	color: #fff;
+	line-height: 80px;
+	text-shadow: 5px 5px 5px #000;
+}
+
+.note{
+	background: #fff;
+	padding: 5px;
+	line-height: 80px;
+	border-radius: 10px;
+}
+
+.account{
+	display: flex;
+	color: #fff;
+	column-gap: 15px;
+	padding: 25px 20px;
+}
+
+.account img{
+	width: 35px;
+	height: 35px;
+	background: #fff;
+	border-radius: 100%;
+}
+
+.bg-pink{
+	background: #FB5185;
+}
+
+.news{
+	color: #fff;
+	text-shadow: 2px 2px 5px #000;
+	padding-top: 10px;
+}
+
+
+.menu ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.menu ul li{
+	width: 200px;
+	text-align: center;
+	display: inline-block;
+	color: white;
+	margin: 0;
+	padding: 10px 0px;
+
+	border-right: 3px solid #fff;
+}

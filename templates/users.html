@@ -1,0 +1,43 @@
+{% extends 'header.html' %}
+
+{% block content %}
+<div class="row ">
+    <div class="col-md-12">
+        <div class="table-responsive">
+            <table class="table table-hover table-bordered table-striped">
+                <thead>
+                    <tr>
+                        <th>S.No</th>
+                        <th>Username</th>
+                        <th>Roll</th>
+                        <th>Email</th>
+                        <th>Mobile</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    {% for user in  users %}
+                    <tr>
+                        <td>{{ loop.index }}</td>
+                        <td>{{ user[1] }}</td>
+                        <td>{{ user[2] }}</td>
+                        <td>{{ user[3] }}</td>
+                        <td>{{ user[4] }}</td>
+                        <td>
+
+                            <a href="/editInfo?id={{ user[0] }}" class="btn btn-info">Edit</a>
+
+                            <a href="/delUser?delId={{ user[0] }}" class="btn btn-danger" onclick="return confirm('Are you sure to delete')">Delete</a>
+
+
+                        </td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+        
+    </div>
+</div>
+{% endblock %}
