@@ -93,6 +93,8 @@ def details():
 		return redirect("/")
 
 
+
+
 @app.route("/editInfo", methods=["GET","POST"])
 def editData():
 	userId = request.args.get('id')
